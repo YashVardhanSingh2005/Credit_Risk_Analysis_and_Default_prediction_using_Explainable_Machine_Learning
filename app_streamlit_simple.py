@@ -7,8 +7,12 @@ import shap
 import matplotlib.pyplot as plt
 
 # ------------------ CONFIG: change these paths ------------------
-PREPROCESSED_CSV_PATH = "/content/drive/MyDrive/lending_club_preprocessed.csv"
-MODEL_PATH = "/content/drive/MyDrive/lgbm_tuned_final.pkl"
+#PREPROCESSED_CSV_PATH = "/content/drive/MyDrive/lending_club_preprocessed.csv"
+#MODEL_PATH = "/content/drive/MyDrive/lgbm_tuned_final.pkl"
+
+# UPDATED FOR DEPLOYMENT
+PREPROCESSED_CSV_PATH = "app_sample_data.csv"
+MODEL_PATH = "lgbm_tuned_final.pkl"
 # ---------------------------------------------------------------
 
 st.set_page_config(page_title="Loan PD Demo (LightGBM + SHAP + Threshold)", layout="wide")
